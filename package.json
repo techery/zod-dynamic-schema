@@ -1,0 +1,43 @@
+{
+  "name": "@techery/zod-dynamic-schema",
+  "version": "0.1.0",
+  "description": "Type-safe factory functions for creating dynamic Zod schemas with TypeScript inference",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests yet\" && exit 0",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "zod",
+    "schema",
+    "dynamic",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "zod": "^3.24.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techery/zod-dynamic-schema.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techery/zod-dynamic-schema/issues"
+  },
+  "homepage": "https://github.com/techery/zod-dynamic-schema#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
