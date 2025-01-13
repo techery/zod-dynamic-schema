@@ -77,8 +77,11 @@ const multipleChoiceQuestion = dynamicOptionsWidgetSchemaFactory({
   instructions: "Please provide 3-6 options for multiple choice question"
 });
 
-// Type inference works perfectly
+// Get the schema type directly from the factory
+type DynamicOptions = typeof dynamicOptionsWidgetSchemaFactory.$type;
+// Or from the instance
 type SingleChoiceWidget = z.infer<typeof singleChoiceQuestion>;
+// Both will give you:
 // {
 //   type: "options";
 //   options: { name: string }[];  // with min(2) and max(4) constraints
@@ -168,6 +171,8 @@ type SchemaFactory<I, Z extends z.ZodTypeAny> = {
   (): Z;
 };
 ```
+
+The `$type` property allows you to get the inferred type directly from the factory, without creating an instance. This is useful when you need the type but don't have the runtime parameters yet.
 
 ## Authors
 
