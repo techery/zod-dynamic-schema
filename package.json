@@ -1,6 +1,6 @@
 {
   "name": "@techery/zod-dynamic-schema",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Type-safe factory functions for creating dynamic Zod schemas with TypeScript inference",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
